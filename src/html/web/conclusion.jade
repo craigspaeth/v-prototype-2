@@ -1,0 +1,27 @@
+- conclusion = locals.copy.web.sections.conclusion
+
+#frame-conclusion.frame
+  .frame--backdrop
+    img( data-src= imagePath(conclusion.backdrop.src, 'web/backdrops') )
+  .conclusion-credit.frame--backdrop-credit
+    != conclusion.backdrop.credit
+
+  .frame--body: .frame--vcenter: .frame--vcenter-wrap
+    .conclusion-headline.frame--headline
+      = conclusion.message
+
+    .conclusion-links
+      for link in conclusion.links
+        a.conclusion-link( href= link.href, target='_blank' )
+          = link.name
+
+    .conclusion-share
+      h3 Share this
+      .conclusion-share--facebook
+        a: img( src= imagePath('bf.svg'), alt='F' )
+        .facebook-count
+          //- Rendered client-side
+      .conclusion-share--twitter
+        a: img( src= imagePath('twt.svg'), alt='T' )
+        .twitter-count
+          //- Rendered client-side

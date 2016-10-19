@@ -1,0 +1,16 @@
+@import 'common'
+
+.header
+  position fixed
+  top (grid-offset / 2)
+  left grid-offset
+  z-index z-header
+  transform translateZ(0)
+  opacity 0
+  transition opacity 0.25s
+  &.is-active
+    opacity 1
+
+.header--logo
+  display inline-block
+  height (unit * 2)

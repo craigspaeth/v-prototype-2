@@ -1,0 +1,145 @@
+{
+  "copy": {
+    "web": {
+      "sections": {
+        "introduction": {
+          "headlines": [
+            "We are more than just a network. We are a global team of problem-solvers, engineers, technologists and innovators."
+          ],
+          "images": [
+            "aiWeiWei.jpg",
+            "RoxyPaine-MarianneBoesky2.jpg"
+          ],
+          "credits": [
+            ""
+          ]
+        },
+        "museums-and-institutions": {
+          "headline": "And we’re rapidly growing.",
+          "description": "After acquiring AOL, last year Verizon went on to acquire Yahoo, FreeBee Data, XO Communications, Volicon, Complex Media, ExpressFleet, Fleetmatics, and formed a joint venture—Verizon Hearst Media Partners.",
+          "backdrop": {
+            "src": "musee-de-louvre2.jpg",
+            "credit": ""
+          }
+        },
+        "educational-database": {
+          "headline": "Verizon now owns 2,761 brands—helping us capitalize in the areas of video, cloud, automotive, mobile advertising & marketing, content creation & distribution, software, IoT, and security.",
+          "images": [
+            [
+              "gray.jpg",
+              "gray.jpg",
+              "gray.jpg",
+              "gray.jpg",
+              "gray.jpg"
+            ],
+            [
+              "gray.jpg",
+              "gray.jpg",
+              "gray.jpg",
+              "gray.jpg",
+              "gray.jpg"
+            ],
+            [
+              "gray.jpg",
+              "gray.jpg",
+              "gray.jpg",
+              "gray.jpg",
+              "gray.jpg"
+            ],
+            [
+              "gray.jpg",
+              "gray.jpg",
+              "gray.jpg",
+              "gray.jpg"
+            ]
+          ]
+        },
+        "inquiries-graph": {
+          "headline": "Oh, did we mention we’re still ranked number one in our wireless and FiOS networks?",
+          "caption": {
+            "headline": "Lorem Ipsum",
+            "body": "Ad et magna mollit elit adipisicing amet excepteur laboris consequat aliquip aute. Ut id elit voluptate ullamco laboris sit minim sunt. Et adipisicing laboris quis esse."
+          },
+          "graph": {
+            "data": "graph-inquiries_data.svg",
+            "grid": "graph-inquiries_grid.svg",
+            "labels": "graph-inquiries_labels.svg"
+          }
+        },
+        "added-categories": {
+          "headline": "Or that we’re making ground groundbreaking strides in 5G technology? We’ll begin commercially deploying 5G service this year.",
+          "description": "",
+          "categories": [
+            {
+              "name": "",
+              "images": [
+                "gray.jpg",
+                "gray.jpg",
+                "gray.jpg",
+                "gray.jpg",
+                "gray.jpg",
+                "gray.jpg",
+                "gray.jpg"
+              ]
+            },
+            {
+              "name": "",
+              "images": [
+                "gray.jpg",
+                "gray.jpg",
+                "gray.jpg",
+                "gray.jpg"
+              ]
+            },
+            {
+              "name": "",
+              "images": [
+                "gray.jpg",
+                "gray.jpg",
+                "gray.jpg"
+              ]
+            },
+            {
+              "name": "",
+              "images": [
+                "gray.jpg",
+                "gray.jpg",
+                "gray.jpg",
+                "gray.jpg"
+              ]
+            }
+          ]
+        },
+        "mobile-app": {
+          "headline": "Wait, what?",
+          "video": {
+            "cover": "",
+            "sources": []
+          }
+        },
+        "browse-and-collect-fairs": {
+          "headline": "Yes, we're a rising tech company and we're not stopping there",
+          "description": "We're on a mission to monetize our network and become a unique technology leader, whilst improving lives and growing shareholder value.",
+          "images": []
+        },
+        "bringing-together": {
+          "headline": "In this new ecosystem of ever-evolving needs for complex machine-to-machine and IoT solutions, Verizon is moving quickly to stay ahead of increasing demands.",
+          "backdrop": {
+            "src": "aiWeiWei.jpg",
+            "credit": ""
+          }
+        },
+        "conclusion": {
+          "message": "“Verizon is in absolute unique position in this new ecosystem. It is about connecting anything to anything.” ",
+          "backdrop": {
+            "src": "aiWeiWei.jpg",
+            "credit": ""
+          },
+          "links": [
+            { "name": "Ajay Waghray, CIO, Verizon Enterprise Solutions", "href": "" }
+          ]
+        }
+      }
+    }
+  }
+}

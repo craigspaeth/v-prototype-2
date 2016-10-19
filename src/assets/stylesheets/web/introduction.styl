@@ -1,0 +1,28 @@
+@import 'common'
+
+for n in 0 1 2 3
+  #introduction-headline-{n}
+    opacity 0
+
+#introduction-credit-0
+  opacity 0.6
+for n in 1 2 3
+  #introduction-credit-{n}
+    opacity 0
+
+.introduction--logo
+  display block
+  width 33.3%
+  margin auto
+
+.intro-chevron
+  position absolute
+  width (unit * 2)
+  bottom @width
+  left 50%
+  height @width
+  margin-left -(@width / 2)
+  z-index 1
+  border 2px solid white
+  border-width 0 2px 2px 0
+  transform rotate(45deg)

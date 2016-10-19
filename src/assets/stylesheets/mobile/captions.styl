@@ -1,0 +1,86 @@
+@import 'common'
+
+.pane
+  &.is-captioned
+    .pane--backdrop
+      transform rotateX(-35deg) translateY(-20%)
+    .pane--backdrop-overlay
+      opacity 1
+    .pane--info-pane
+      opacity 1
+      transform translateY(0)
+    .pane--info-icon
+      opacity 0 !important
+    .pane--bottom
+      opacity 0
+  &.is-active
+    .pane--info-icon
+      opacity 1
+
+.pane--backdrop-context
+  occupy()
+  perspective 1500
+  perspective-origin 50% 50%
+  z-index -1
+.pane--backdrop
+  transition transform 0.5s
+  transition-timing-function ios-timing-function
+  backface-visibility hidden
+.pane--backdrop-overlay
+  gradient-overlay()
+  opacity 0
+  transition opacity 0.5s
+
+.pane--info
+  position absolute
+  bottom (unit * 2)
+  right 5%
+  left 5%
+  height 25%
+  z-index z-info
+  a
+    color white
+    text-decoration underline
+
+.pane--info-icon
+  display block
+  position absolute
+  width 25px
+  height @width
+  bottom (-(unit / 2))
+  left 0
+  line-height @width
+  text-align center
+  vertical-align middle
+  cursor pointer
+  transition opacity 0.5s
+  opacity 0
+  > img
+    vertical-align top
+    width 100%
+    height 100%
+
+.pane--close-icon
+  display block
+  width 46px
+  height @width
+  margin (unit * 2) auto
+  > img
+    vertical-align top
+    width 100%
+    height 100%
+
+.pane--info-pane
+  position absolute
+  bottom 0
+  right 0
+  left 0
+  color white
+  font-size credit-size
+  padding unit
+  opacity 0
+  transform translateY(unit)
+  transition opacity 0.25s, transform 0.25s
+
+.pane--bottom
+  transition opacity 0.5s

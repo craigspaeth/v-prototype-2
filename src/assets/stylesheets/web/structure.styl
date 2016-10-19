@@ -1,0 +1,76 @@
+@import 'common'
+
+.frame
+  position fixed
+  width 100%
+  height 100%
+  min-width web-min-width
+  background-color black
+
+.frame--body
+  position absolute
+  top (grid-offset / 2)
+  right grid-offset
+  bottom (grid-offset / 2)
+  left grid-offset
+
+.frame--vcenter
+  width 100%
+  height 100%
+.frame--vcenter
+  display table
+.frame--vcenter-wrap
+  display table-cell
+  vertical-align middle
+
+.frame--layer
+  occupy()
+
+.frame--centering-context
+  translate-center()
+
+.frame--vertical-centering-context
+  translate-v-center()
+
+.frame--credit
+  position absolute
+  bottom (unit * 2)
+  left 0
+  width grid-span(2)
+  font-size credit-size
+
+.frame--backdrop-credit
+  position absolute
+  right (unit * 2)
+  bottom @right
+  left @right
+  text-align right
+  color rgba(white, 0.75)
+
+.frame--caption
+  font-size caption-size
+
+.frame--headline
+  font-size headline-size
+
+.frame--description
+  margin-top unit
+  font-size description-size
+  line-height 1.4
+  a
+    color white
+    border-bottom 1px solid rgba(white, 0.5)
+
+.frame--backdrop
+  occupy()
+  gradient-overlay()
+  background-color black
+  > img
+    display block
+    position absolute
+    top 50%
+    left 50%
+    opacity 0
+    transition opacity 0.5s
+    &.is-ready
+      opacity 1

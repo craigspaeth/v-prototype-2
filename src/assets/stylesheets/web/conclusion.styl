@@ -1,0 +1,65 @@
+@import 'common'
+
+#frame-conclusion
+  text-align center
+
+.conclusion-headline
+  width 60vw
+  margin auto
+  margin-top 80px
+
+.conclusion-credit
+  color rgba(white, 0.5)
+
+.conclusion-links
+  margin (unit * 2) 0
+  avant-garde()
+  font-size 13px
+.conclusion-link
+  position relative
+  display inline-block
+  padding (unit / 2) 0
+  margin 0 unit
+  color white
+  &:after
+    display block
+    content ''
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    height 2px
+    background-color white
+    opacity 0
+    transition all 0.125s
+  &:hover:after
+    background-color white
+    transform translateY(-(unit / 4))
+    opacity 1
+
+.conclusion-share
+  display none
+  > h3
+    font-size 15px
+    font-weight normal
+    text-transform uppercase
+    letter-spacing 2px
+
+.conclusion-share--facebook
+.conclusion-share--twitter
+  display inline-block
+  margin 0 (unit / 2)
+  width (unit * 3)
+  height @width
+  vertical-align middle
+  border 2px solid white
+  border-radius 50%
+  transition border-color 0.25s
+  cursor pointer
+  > a
+    line-height @width
+  &:hover
+    border-color purple-color
+  .facebook-count
+  .twitter-count
+    line-height (unit * 2)

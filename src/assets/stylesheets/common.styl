@@ -1,0 +1,89 @@
+@import '../../../node_modules/nib'
+
+base-unit = 20px
+unit = base-unit
+grid-cols = 5
+grid-offset = (unit * 4)
+grid-span(n)
+  ((100% / grid-cols) * n)
+ios-timing-function = cubic-bezier(0.23, 1, 0.32, 1)
+
+// Sizes
+headline-size = 35px
+description-size = 20px
+credit-size = 16px
+caption-size = 16px
+web-min-width = 960px
+
+// Colors
+gray-color = #666
+purple-color = #6a0bc1
+yellow-color = #e5de64
+
+// Z-map
+z-header = 100
+z-progress = 110
+z-info = 120
+z-preloader = 200
+z-max = 9999
+
+// Mixins
+antialiased()
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  font-weight bold
+
+avant-garde()
+  font-family "NHaasGrotesk", sans-serfi
+  text-transform uppercase
+  letter-spacing 2px
+  antialiased()
+
+garamond()
+  font-family "NHaasGrotesk", sans-serfi
+  line-height 1.2
+  antialiased()
+
+block-margins(size = unit)
+  margin size 0
+  &:first-child
+    margin-top 0
+  &:last-child
+    margin-bottom 0
+
+inline-block-margins(size = unit)
+  margin 0 size
+  &:first-child
+    margin-left 0
+  &:last-child
+    margin-right 0
+
+occupy(position = absolute)
+  position position
+  top 0
+  right 0
+  bottom 0
+  left 0
+
+gradient-overlay(position = absolute, color = black, from = top)
+  &:after
+    display block
+    content ''
+    background linear-gradient(from, transparent, rgba(color, 0.5))
+    occupy(position)
+
+translate-v-center()
+  position absolute
+  top 50%
+  transform translateY(-50%)
+
+translate-h-center()
+  position absolute
+  left 50%
+  transform translateX(-50%)
+
+translate-center()
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)

@@ -1,0 +1,34 @@
+@import './common'
+@import './font'
+
+*
+*:before
+*:after
+  box-sizing border-box
+
+::selection
+  background-color purple-color
+  color white
+::-moz-selection
+  background-color purple-color
+  color white
+
+html
+body
+  height 100%
+
+body
+  margin 0
+  background-color black
+  color white
+  garamond()
+
+img
+video
+  vertical-align bottom
+
+p
+  block-margins(unit / 2)
+
+a
+  text-decoration none

@@ -1,0 +1,29 @@
+- sections = locals.copy.web.sections
+
++frame('museums-and-institutions', 3)
+
++frame('educational-database', 3)
+  include columns
+
++frame('inquiries-graph')
+  include graph
+
++frame('added-categories')
+  include categories
+
++frame('mobile-app')
+  .gradient-overlay: .frame--centering-context.span-full
+    #mobile-app--video-wall.video-wall
+      video( autoplay, loop )
+        for source in frame.video.sources
+          source( src= assetsPath(source.src), type= source.type )
+        img( data-src= imagePath(frame.video.cover, 'web/singles') )
+
++frame('browse-and-collect-fairs', 3)
+  .gradient-overlay: .frame--centering-context.span-full
+    #browse-and-collect-fairs--image-wall.image-wall
+      for image, i in frame.images
+        .image-wall--image( id="image-wall--image-#{i}" )
+          img( data-src= imagePath(frame.images[i], 'web/crops') )
+
++frame('bringing-together', 4)
