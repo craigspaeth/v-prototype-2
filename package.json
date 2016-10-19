@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "html": "jade -O src/data.json src/html/index.jade --out public",
-    "css": "stylus src/assets/stylesheets/application.styl --out public/stylesheets/",
-    "js": "browserify --extension .coffee src/assets/javascripts/application.coffee > public/javascripts/application.js",
+    "html": "jade -O src/data.json src/html/index.jade --out docs",
+    "css": "stylus src/assets/stylesheets/application.styl --out docs/stylesheets/",
+    "js": "browserify --extension .coffee src/assets/javascripts/application.coffee > docs/javascripts/application.js",
     "c": "concurrently 'npm run html' 'npm run css' 'npm run js'"
   },
   "browserify": {
