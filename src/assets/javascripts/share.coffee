@@ -1,8 +1,8 @@
 $ = require 'jquery'
 
 module.exports = class Share
-  text: 'See Artsy’s 2014 Year in Review by the Numbers'
-  href: 'http://2014.artsy.net'
+  text: 'See Verizon’s 2016 Year in Review by the Numbers'
+  href: 'http://2016.artsy.net'
 
   constructor: ({ @$twitter, @$facebook }) ->
     @$twitter.on 'click', (e) =>

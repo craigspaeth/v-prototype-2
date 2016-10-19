@@ -11374,9 +11374,9 @@ var $, Share,
 $ = require('jquery');
 
 module.exports = Share = (function() {
-  Share.prototype.text = 'See Artsy’s 2014 Year in Review by the Numbers';
+  Share.prototype.text = 'See Verizon’s 2016 Year in Review by the Numbers';
 
-  Share.prototype.href = 'http://2014.artsy.net';
+  Share.prototype.href = 'http://2016.artsy.net';
 
   function Share(arg) {
     this.$twitter = arg.$twitter, this.$facebook = arg.$facebook;
@@ -11945,7 +11945,7 @@ module.exports = [
         element: '.frame--vcenter',
         translateY: [-6, -12]
       }, {
-        element: '#graph-overlay--label_2014',
+        element: '#graph-overlay--label_2016',
         opacity: opacity.out
       }
     ]

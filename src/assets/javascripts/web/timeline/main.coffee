@@ -119,7 +119,7 @@ module.exports = [
     stage: '#frame-inquiries-graph', duration: '50%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', translateY: [-6, -12] }
-      { element: '#graph-overlay--label_2014', opacity: opacity.out }
+      { element: '#graph-overlay--label_2016', opacity: opacity.out }
     ]
   }
   { # Progress Data
