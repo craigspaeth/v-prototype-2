@@ -19,6 +19,7 @@ web-min-width = 960px
 gray-color = #666
 purple-color = #6a0bc1
 yellow-color = #e5de64
+red-color = #cc050c
 
 // Z-map
 z-header = 100
@@ -64,13 +65,6 @@ occupy(position = absolute)
   right 0
   bottom 0
   left 0
-
-gradient-overlay(position = absolute, color = black, from = top)
-  &:after
-    display block
-    content ''
-    background linear-gradient(from, transparent, rgba(color, 0.5))
-    occupy(position)
 
 translate-v-center()
   position absolute
