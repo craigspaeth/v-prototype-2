@@ -66,7 +66,7 @@
     margin-right 0
 .artwork
   display block
-  margin unit (unit / 2)
+  margin 45px
   > img
     width 100%
 
@@ -93,5 +93,39 @@
 #frame-bringing-together .frame--backdrop-credit
   text-align left
 
-#frame-museums-and-institutions .frame--vcenter-wrap
-  color white
+#frame-museums-and-institutions
+#frame-introduction
+#frame-browse-and-collect-fairs
+#frame-bringing-together
+  .frame--vcenter-wrap
+    color white
+
+#frame-browse-and-collect-fairs
+#frame-bringing-together
+#frame-museums-and-institutions
+  background black
+  &::after
+    content '.'
+    color transparent
+    position absolute
+    width 100%
+    height 100%
+    top 0
+    left 0
+    background-color black
+    opacity 0.3
+  .frame--body
+    z-index 2
+  .frame--backdrop
+    background black
+
+#columns::after
+  content '.'
+  color transparent
+  position absolute
+  width 100%
+  height 100%
+  top 0
+  left 0
+  background-color white
+  opacity 0.8

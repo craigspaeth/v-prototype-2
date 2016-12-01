@@ -4,140 +4,86 @@
       "sections": {
         "introduction": {
           "headlines": [
-            "We are more than just a network. We are a global team of problem-solvers, engineers, technologists and innovators."
+            "Verizon is more than the best wireless network. We are a global team of problem-solvers, engineers, technologists, and innovators."
           ],
           "images": [
-            "aiWeiWei.jpg",
-            "RoxyPaine-MarianneBoesky2.jpg"
+            "white.png",
+            "bg1.jpg"
           ],
           "credits": [
             ""
           ]
         },
         "museums-and-institutions": {
-          "headline": "And we’re rapidly growing.",
-          "description": "After acquiring AOL, last year Verizon went on to acquire Yahoo, FreeBee Data, XO Communications, Volicon, Complex Media, ExpressFleet, Fleetmatics, and formed a joint venture—Verizon Hearst Media Partners.",
+          "headline": "After acquiring AOL, last year we went on to acquire Yahoo, FreeBee Data, Complex Media, XO Communications, Volicon, ExpressFleet, Fleetmatics, and formed a joint venture— Verizon Hearst Media Partners.",
+          "description": "",
           "backdrop": {
-            "src": "musee-de-louvre2.jpg",
+            "src": "bg2.jpg",
             "credit": ""
           }
         },
         "educational-database": {
-          "headline": "Verizon now owns 2,761 brands—helping us capitalize in the areas of video, cloud, automotive, mobile advertising & marketing, content creation & distribution, software, IoT, and security.",
+          "headline": "We are rapidly growing in the areas of mobility, cloud, video & advertising, broadband & fiber, IoT, and managed security— while making groundbreaking strides in 5G technology.",
           "images": [
             [
-              "gray.jpg",
-              "gray.jpg",
-              "gray.jpg",
-              "gray.jpg",
-              "gray.jpg"
+              "1.png",
+              "11.png",
+              "13.png",
+              "15.png",
+              "17.png",
+              "28.png",
+              "19.png"
             ],
             [
-              "gray.jpg",
-              "gray.jpg",
-              "gray.jpg",
-              "gray.jpg",
-              "gray.jpg"
+              "20.png",
+              "22.png",
+              "24.png",
+              "26.png",
+              "21.png",
+              "14.png",
+              "3.png",
+              "25.png",
+              "5.png"
             ],
             [
-              "gray.jpg",
-              "gray.jpg",
-              "gray.jpg",
-              "gray.jpg",
-              "gray.jpg"
+              "7.png",
+              "9.png",
+              "10.png",
+              "12.png",
+              "23.png",
+              "16.png"
             ],
             [
-              "gray.jpg",
-              "gray.jpg",
-              "gray.jpg",
-              "gray.jpg"
+              "18.png",
+              "2.png",
+              "4.png",
+              "6.png",
+              "8.png"
             ]
           ]
         },
-        "inquiries-graph": {
-          "headline": "Oh, did we mention we’re still ranked number one in our wireless and Fios networks?",
-          "caption": {
-            "headline": "Lorem Ipsum",
-            "body": "Ad et magna mollit elit adipisicing amet excepteur laboris consequat aliquip aute. Ut id elit voluptate ullamco laboris sit minim sunt. Et adipisicing laboris quis esse."
-          },
-          "graph": {
-            "data": "graph-inquiries_data.svg",
-            "grid": "graph-inquiries_grid.svg",
-            "labels": "graph-inquiries_labels.svg"
-          }
-        },
-        "added-categories": {
-          "headline": "Or that we’re making ground groundbreaking strides in 5G technology? We’ll begin commercially deploying 5G service this year.",
-          "description": "",
-          "categories": [
-            {
-              "name": "",
-              "images": [
-                "gray.jpg",
-                "gray.jpg",
-                "gray.jpg",
-                "gray.jpg",
-                "gray.jpg",
-                "gray.jpg",
-                "gray.jpg"
-              ]
-            },
-            {
-              "name": "",
-              "images": [
-                "gray.jpg",
-                "gray.jpg",
-                "gray.jpg",
-                "gray.jpg"
-              ]
-            },
-            {
-              "name": "",
-              "images": [
-                "gray.jpg",
-                "gray.jpg",
-                "gray.jpg"
-              ]
-            },
-            {
-              "name": "",
-              "images": [
-                "gray.jpg",
-                "gray.jpg",
-                "gray.jpg",
-                "gray.jpg"
-              ]
-            }
-          ]
-        },
         "mobile-app": {
-          "headline": "Wait, what?",
+          "headline": "Wait, what? <br>Yes, we're a rising tech company and we're not stopping there. ",
           "video": {
             "cover": "",
             "sources": []
           }
         },
         "browse-and-collect-fairs": {
-          "headline": "Yes, we're a rising tech company and we're not stopping there",
-          "description": "We're on a mission to monetize our network and become a unique technology leader, while improving lives and growing shareholder value.",
-          "images": []
-        },
-        "bringing-together": {
           "headline": "In this new ecosystem of ever-evolving needs for complex machine-to-machine and IoT solutions, Verizon is moving quickly to stay ahead of increasing demands.",
+          "description": "",
+          "images": [],
           "backdrop": {
-            "src": "aiWeiWei.jpg",
+            "src": "bg3.jpg",
             "credit": ""
           }
         },
-        "conclusion": {
-          "message": "“Verizon is in absolute unique position in this new ecosystem. It is about connecting anything to anything.” ",
+        "bringing-together": {
+          "headline": "We're on a mission to monetize our networks and become a unique technology leader, while improving lives and growing shareholder value.",
           "backdrop": {
-            "src": "aiWeiWei.jpg",
+            "src": "bg4.jpg",
             "credit": ""
-          },
-          "links": [
-            { "name": "Ajay Waghray, CIO, Verizon Enterprise Solutions", "href": "" }
-          ]
+          }
         }
       }
     }

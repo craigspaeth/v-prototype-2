@@ -11502,7 +11502,7 @@ module.exports = Web = (function() {
 })();
 
 
-},{"../backdrops":17,"../preloader":19,"../share":20,"./timeline":24,"jquery":3,"kubrick-js":7}],22:[function(require,module,exports){
+},{"../backdrops":17,"../preloader":19,"../share":20,"./timeline":23,"jquery":3,"kubrick-js":7}],22:[function(require,module,exports){
 var $, Map;
 
 $ = require('jquery');
@@ -11566,44 +11566,10 @@ module.exports = Map = (function() {
 
 
 },{"jquery":3}],23:[function(require,module,exports){
-var opacity;
-
-opacity = require('./transitions').opacity;
-
-module.exports = [
-  {
-    stage: '#frame-conclusion',
-    duration: '200%',
-    easing: 'linear',
-    actors: [
-      {
-        element: '.frame--vcenter',
-        opacity: opacity["in"],
-        translateY: [30, 0]
-      }, {
-        element: '.frame--backdrop',
-        opacity: opacity["in"],
-        scale: [1.025, 1]
-      }, {
-        element: '.frame--backdrop-credit',
-        opacity: opacity["in"]
-      }
-    ]
-  }, {
-    stage: '#frame-conclusion',
-    duration: '100%',
-    easing: 'linear',
-    key: true,
-    actors: []
-  }
-];
+module.exports = [].concat(require('./introduction'), require('./main'));
 
 
-},{"./transitions":27}],24:[function(require,module,exports){
-module.exports = [].concat(require('./introduction'), require('./main'), require('./conclusion'));
-
-
-},{"./conclusion":23,"./introduction":25,"./main":26}],25:[function(require,module,exports){
+},{"./introduction":24,"./main":25}],24:[function(require,module,exports){
 var $, $header, backdropScale, opacity, ref, translateY;
 
 $ = require('jquery');
@@ -11709,7 +11675,7 @@ module.exports = [
 ];
 
 
-},{"./transitions":27,"jquery":3}],26:[function(require,module,exports){
+},{"./transitions":26,"jquery":3}],25:[function(require,module,exports){
 var $, Map, backdropScale, map, mapTransitioned, opacity, ref, transitions, translateY;
 
 $ = require('jquery');
@@ -11855,211 +11821,6 @@ module.exports = [
       }
     ]
   }, {
-    stage: '#frame-inquiries-graph',
-    duration: '100%',
-    easing: 'linear',
-    actors: [
-      {
-        element: '.frame--vcenter',
-        opacity: opacity["in"],
-        translateY: [30, 24]
-      }, {
-        element: '.graph',
-        opacity: opacity["in"]
-      }, {
-        element: '.graph--caption',
-        opacity: opacity["in"]
-      }
-    ]
-  }, {
-    stage: '#frame-inquiries-graph',
-    duration: '100%',
-    easing: 'linear',
-    actors: [
-      {
-        element: '.frame--vcenter',
-        translateY: [24, 18]
-      }, {
-        element: '#graph-overlay--data',
-        translateX: [0, 103]
-      }
-    ]
-  }, {
-    stage: '#frame-inquiries-graph',
-    duration: '50%',
-    easing: 'linear',
-    actors: [
-      {
-        element: '.frame--vcenter',
-        translateY: [18, 12]
-      }, {
-        element: '#graph-overlay--label_2012',
-        opacity: opacity.out
-      }
-    ]
-  }, {
-    stage: '#frame-inquiries-graph',
-    duration: '100%',
-    easing: 'linear',
-    actors: [
-      {
-        element: '.frame--vcenter',
-        translateY: [12, 6]
-      }, {
-        element: '#graph-overlay--data',
-        translateX: [103, 206]
-      }
-    ]
-  }, {
-    stage: '#frame-inquiries-graph',
-    duration: '50%',
-    easing: 'linear',
-    actors: [
-      {
-        element: '.frame--vcenter',
-        translateY: [6, 0]
-      }, {
-        element: '#graph-overlay--label_2013',
-        opacity: opacity.out
-      }
-    ]
-  }, {
-    stage: '#frame-inquiries-graph',
-    duration: '100%',
-    easing: 'linear',
-    actors: [
-      {
-        element: '.frame--vcenter',
-        translateY: [0, -6]
-      }, {
-        element: '#graph-overlay--data',
-        translateX: [206, 309]
-      }
-    ]
-  }, {
-    stage: '#frame-inquiries-graph',
-    duration: '50%',
-    easing: 'linear',
-    actors: [
-      {
-        element: '.frame--vcenter',
-        translateY: [-6, -12]
-      }, {
-        element: '#graph-overlay--label_2016',
-        opacity: opacity.out
-      }
-    ]
-  }, {
-    stage: '#frame-inquiries-graph',
-    duration: '100%',
-    easing: 'linear',
-    actors: [
-      {
-        element: '.frame--vcenter',
-        translateY: [-12, -18]
-      }, {
-        element: '#graph-overlay--data',
-        translateX: [309, 412]
-      }
-    ]
-  }, {
-    stage: '#frame-inquiries-graph',
-    duration: '50%',
-    easing: 'linear',
-    actors: [
-      {
-        element: '.frame--vcenter',
-        translateY: [-18, -24]
-      }, {
-        element: '#graph-overlay--label_2015',
-        opacity: opacity.out
-      }
-    ]
-  }, {
-    stage: '#frame-inquiries-graph',
-    duration: '100%',
-    easing: 'linear',
-    key: true,
-    actors: [
-      {
-        element: '.frame--vcenter',
-        opacity: opacity.out,
-        translateY: [-24, -30]
-      }, {
-        element: '.graph',
-        opacity: opacity.out
-      }, {
-        element: '.graph--caption',
-        opacity: opacity.out
-      }
-    ]
-  }, {
-    stage: '#frame-added-categories',
-    duration: '100%',
-    easing: 'linear',
-    actors: [
-      {
-        element: '.frame--vcenter',
-        opacity: opacity["in"],
-        translateY: translateY["in"]
-      }, {
-        element: '#categories',
-        translateY: [150, 50]
-      }, {
-        element: '#category-0',
-        opacity: [0, 1]
-      }, {
-        element: '#category-1',
-        opacity: [-0.25, 1]
-      }, {
-        element: '#category-2',
-        opacity: [-0.5, 1]
-      }, {
-        element: '#category-3',
-        opacity: [-0.75, 1]
-      }
-    ]
-  }, {
-    stage: '#frame-added-categories',
-    duration: '100%',
-    easing: 'linear',
-    key: true,
-    actors: [
-      {
-        element: '.frame--vcenter',
-        translateY: translateY.hold
-      }, {
-        element: '#categories',
-        translateY: [50, -50]
-      }
-    ]
-  }, {
-    stage: '#frame-added-categories',
-    duration: '100%',
-    easing: 'linear',
-    actors: [
-      {
-        element: '.frame--vcenter',
-        opacity: opacity.out,
-        translateY: translateY.out
-      }, {
-        element: '#categories',
-        translateY: [-50, -150]
-      }, {
-        element: '#category-0',
-        opacity: [1, -0.75]
-      }, {
-        element: '#category-1',
-        opacity: [1, -0.5]
-      }, {
-        element: '#category-2',
-        opacity: [1, -0.25]
-      }, {
-        element: '#category-3',
-        opacity: [1, 0]
-      }
-    ]
-  }, {
     stage: '#frame-mobile-app',
     duration: '100%',
     easing: 'linear',
@@ -12108,17 +11869,12 @@ module.exports = [
         opacity: opacity["in"],
         translateY: translateY["in"]
       }, {
-        element: '#image-wall--image-0',
-        opacity: [0, 1]
+        element: '.frame--backdrop-credit',
+        opacity: opacity["in"]
       }, {
-        element: '#image-wall--image-1',
-        opacity: [-0.25, 1]
-      }, {
-        element: '#image-wall--image-2',
-        opacity: [-0.5, 1]
-      }, {
-        element: '#image-wall--image-3',
-        opacity: [-0.75, 1]
+        element: '.frame--backdrop',
+        opacity: opacity["in"],
+        scale: backdropScale.a
       }
     ]
   }, {
@@ -12130,6 +11886,12 @@ module.exports = [
       {
         element: '.frame--vcenter',
         translateY: translateY.hold
+      }, {
+        element: '.frame--vcenter',
+        translateY: translateY.hold
+      }, {
+        element: '.frame--backdrop',
+        scale: backdropScale.b
       }
     ]
   }, {
@@ -12142,17 +11904,12 @@ module.exports = [
         opacity: opacity.out,
         translateY: translateY.out
       }, {
-        element: '#image-wall--image-0',
-        opacity: [1, -0.75]
+        element: '.frame--backdrop-credit',
+        opacity: opacity.out
       }, {
-        element: '#image-wall--image-1',
-        opacity: [1, -0.5]
-      }, {
-        element: '#image-wall--image-2',
-        opacity: [1, -0.25]
-      }, {
-        element: '#image-wall--image-3',
-        opacity: [1, 0]
+        element: '.frame--backdrop',
+        opacity: opacity.out,
+        scale: backdropScale.c
       }
     ]
   }, {
@@ -12212,7 +11969,7 @@ module.exports = [
 ];
 
 
-},{"../map":22,"./transitions":27,"jquery":3}],27:[function(require,module,exports){
+},{"../map":22,"./transitions":26,"jquery":3}],26:[function(require,module,exports){
 var device, generateScalingValues;
 
 device = require('../../device');

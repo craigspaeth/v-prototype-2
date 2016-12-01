@@ -291,7 +291,7 @@ body[data-application='mobile'] #mobile {
   font-size: 16px;
 }
 .frame--headline {
-  font-size: 35px;
+  font-size: 30px;
 }
 .frame--description {
   margin-top: 20px;
@@ -501,7 +501,7 @@ body[data-application='mobile'] #mobile {
 }
 .artwork {
   display: block;
-  margin: 20px 10px;
+  margin: 45px;
 }
 .artwork > img {
   width: 100%;
@@ -532,8 +532,54 @@ body[data-application='mobile'] #mobile {
 #frame-bringing-together .frame--backdrop-credit {
   text-align: left;
 }
-#frame-museums-and-institutions .frame--vcenter-wrap {
+#frame-museums-and-institutions .frame--vcenter-wrap,
+#frame-introduction .frame--vcenter-wrap,
+#frame-browse-and-collect-fairs .frame--vcenter-wrap,
+#frame-bringing-together .frame--vcenter-wrap {
   color: #fff;
+}
+#frame-browse-and-collect-fairs,
+#frame-bringing-together,
+#frame-museums-and-institutions {
+  background: #000;
+}
+#frame-browse-and-collect-fairs::after,
+#frame-bringing-together::after,
+#frame-museums-and-institutions::after {
+  content: '.';
+  color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+}
+#frame-browse-and-collect-fairs .frame--body,
+#frame-bringing-together .frame--body,
+#frame-museums-and-institutions .frame--body {
+  z-index: 2;
+}
+#frame-browse-and-collect-fairs .frame--backdrop,
+#frame-bringing-together .frame--backdrop,
+#frame-museums-and-institutions .frame--backdrop {
+  background: #000;
+}
+#columns::after {
+  content: '.';
+  color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
 }
 .graph {
   position: relative;

@@ -5,13 +5,7 @@
 +frame('educational-database', 3)
   include columns
 
-+frame('inquiries-graph')
-  include graph
-
-+frame('added-categories')
-  include categories
-
-+frame('mobile-app')
++frame('mobile-app', 3)
   .gradient-overlay: .frame--centering-context.span-full
     #mobile-app--video-wall.video-wall
       video( autoplay, loop )
@@ -26,4 +20,4 @@
         .image-wall--image( id="image-wall--image-#{i}" )
           img( data-src= imagePath(frame.images[i], 'web/crops') )
 
-+frame('bringing-together', 4)
++frame('bringing-together', 3)
