@@ -501,7 +501,7 @@ body[data-application='mobile'] #mobile {
 }
 .artwork {
   display: block;
-  margin: 45px;
+  margin: 20px;
 }
 .artwork > img {
   width: 100%;
