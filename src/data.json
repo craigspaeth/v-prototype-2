@@ -4,7 +4,7 @@
       "sections": {
         "introduction": {
           "headlines": [
-            "Verizon is more than the best wireless network. We are a global team of problem-solvers, engineers, technologists, and innovators."
+            "Verizon is a global team of problem-solvers, engineers, technologists, and innovators."
           ],
           "images": [
             "white.png",
@@ -15,7 +15,7 @@
           ]
         },
         "museums-and-institutions": {
-          "headline": "After acquiring AOL, last year we went on to acquire Yahoo, FreeBee Data, Complex Media, XO Communications, Volicon, ExpressFleet, Fleetmatics, and formed a joint venture— Verizon Hearst Media Partners.",
+          "headline": "And we are building the future. ",
           "description": "",
           "backdrop": {
             "src": "bg2.jpg",
@@ -23,7 +23,7 @@
           }
         },
         "educational-database": {
-          "headline": "We are rapidly growing in the areas of mobility, cloud, video & advertising, broadband & fiber, IoT, and managed security— while making groundbreaking strides in 5G technology.",
+          "headline": "After acquiring AOL last year, we went on to add FreeBee Data, Complex Media, XO Communications, Volicon, ExpressFleet, Fleetmatics and Yahoo to our family, and formed a joint venture—Verizon Hearst Media Partners.",
           "images": [
             [
               "1.png",
@@ -52,25 +52,36 @@
           ]
         },
         "mobile-app": {
-          "headline": "Wait, what? <br>Yes, we're a rising tech company and we're not stopping there. ",
+          "headline": "We are rapidly growing in mobility, cloud, video & advertising, broadband & fiber, IoT, and managed security.",
           "video": {
             "cover": "",
             "sources": []
-          }
-        },
-        "browse-and-collect-fairs": {
-          "headline": "In this new ecosystem of ever-evolving needs for complex machine-to-machine and IoT solutions, Verizon is moving quickly to stay ahead of increasing demands.",
-          "description": "",
-          "images": [],
+          },
           "backdrop": {
             "src": "bg3.jpg",
             "credit": ""
           }
         },
-        "bringing-together": {
-          "headline": "We're on a mission to monetize our networks and become a unique technology leader, while improving lives and growing shareholder value.",
+        "browse-and-collect-fairs": {
+          "headline": "Did we mention that we’re making groundbreaking strides in 5G technology?",
+          "description": "",
+          "images": [],
           "backdrop": {
             "src": "bg4.jpg",
+            "credit": ""
+          }
+        },
+        "bringing-together": {
+          "headline": "In this new ecosystem of ever-evolving needs for complex machine-to-machine and IoT solutions, we are moving quickly to stay ahead of increasing demands.",
+          "backdrop": {
+            "src": "bg5.jpg",
+            "credit": ""
+          }
+        },
+        "bringing-together2": {
+          "headline": "We are more than just the best network. We are a rising technology company. We're on a mission to lead the industry, improve lives, and grow shareholder value.",
+          "backdrop": {
+            "src": "bg6.jpg",
             "credit": ""
           }
         }

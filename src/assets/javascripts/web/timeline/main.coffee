@@ -75,23 +75,26 @@ module.exports = [
     stage: '#frame-mobile-app', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
-      { element: '#mobile-app--video-wall', opacity: opacity.in }
+      { element: '.frame--backdrop-credit', opacity: opacity.in }
+      { element: '.frame--backdrop', opacity: opacity.in, scale: backdropScale.a }
     ]
   }
   { # Hold
     stage: '#frame-mobile-app', duration: '100%', easing: 'linear', key: true
     actors: [
       { element: '.frame--vcenter', translateY: translateY.hold }
+      { element: '.frame--vcenter', translateY: translateY.hold }
+      { element: '.frame--backdrop', scale: backdropScale.b }
     ]
   }
   { # Out
     stage: '#frame-mobile-app', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
-      { element: '#mobile-app--video-wall', opacity: opacity.out }
+      { element: '.frame--backdrop-credit', opacity: opacity.out }
+      { element: '.frame--backdrop', opacity: opacity.out, scale: backdropScale.c }
     ]
   }
-
   # browse-and-collect-fairs
 
   { # In
@@ -141,6 +144,35 @@ module.exports = [
   }
   { # Out
     stage: '#frame-bringing-together', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
+      { element: '.frame--backdrop-credit', opacity: opacity.out }
+      { element: '.frame--backdrop', opacity: opacity.out, scale: backdropScale.c }
+    ]
+  }
+
+  # -------------
+
+  # bringing-together2
+
+  { # In
+    stage: '#frame-bringing-together2', duration: '100%', easing: 'linear'
+    actors: [
+      { element: '.frame--vcenter', opacity: opacity.in, translateY: translateY.in }
+      { element: '.frame--backdrop-credit', opacity: opacity.in }
+      { element: '.frame--backdrop', opacity: opacity.in, scale: backdropScale.a }
+    ]
+  }
+  { # Hold
+    stage: '#frame-bringing-together2', duration: '100%', easing: 'linear', key: true
+    actors: [
+      { element: '.frame--vcenter', translateY: translateY.hold }
+      { element: '.frame--vcenter', translateY: translateY.hold }
+      { element: '.frame--backdrop', scale: backdropScale.b }
+    ]
+  }
+  { # Out
+    stage: '#frame-bringing-together2', duration: '100%', easing: 'linear'
     actors: [
       { element: '.frame--vcenter', opacity: opacity.out, translateY: translateY.out }
       { element: '.frame--backdrop-credit', opacity: opacity.out }

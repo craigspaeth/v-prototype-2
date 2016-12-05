@@ -532,20 +532,14 @@ body[data-application='mobile'] #mobile {
 #frame-bringing-together .frame--backdrop-credit {
   text-align: left;
 }
-#frame-museums-and-institutions .frame--vcenter-wrap,
 #frame-introduction .frame--vcenter-wrap,
-#frame-browse-and-collect-fairs .frame--vcenter-wrap,
 #frame-bringing-together .frame--vcenter-wrap {
   color: #fff;
 }
-#frame-browse-and-collect-fairs,
-#frame-bringing-together,
-#frame-museums-and-institutions {
+#frame-bringing-together {
   background: #000;
 }
-#frame-browse-and-collect-fairs::after,
-#frame-bringing-together::after,
-#frame-museums-and-institutions::after {
+#frame-bringing-together::after {
   content: '.';
   color: transparent;
   position: absolute;
@@ -558,14 +552,10 @@ body[data-application='mobile'] #mobile {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   filter: alpha(opacity=30);
 }
-#frame-browse-and-collect-fairs .frame--body,
-#frame-bringing-together .frame--body,
-#frame-museums-and-institutions .frame--body {
+#frame-bringing-together .frame--body {
   z-index: 2;
 }
-#frame-browse-and-collect-fairs .frame--backdrop,
-#frame-bringing-together .frame--backdrop,
-#frame-museums-and-institutions .frame--backdrop {
+#frame-bringing-together .frame--backdrop {
   background: #000;
 }
 #columns::after {
@@ -580,6 +570,9 @@ body[data-application='mobile'] #mobile {
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
+}
+#introduction-headline-0 {
+  color: #000;
 }
 .graph {
   position: relative;
